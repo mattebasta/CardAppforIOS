@@ -8,6 +8,7 @@
 #import "AddCardViewController.h"
 
 @interface AddCardViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *corpNameField;
 
 @property (weak, nonatomic) IBOutlet UITextField *clientIdField;
@@ -16,12 +17,15 @@
 
 @implementation AddCardViewController
 
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     
     self.title = @"New Card";
-    
+
 }
+
+
 
 - (IBAction)saveCardButton:(UIBarButtonItem *)sender {
 
@@ -34,11 +38,7 @@
         [self presentViewController:alert animated:YES completion:nil];
     }*/
     
-        [self.delegate saveCardName:self.corpNameField.text clientId:self.clientIdField.text];
-    
-    
-    
+        [self.delegate saveCardName:self.corpNameField.text clientId:self.clientIdField.text cellBackground:[UIColor purpleColor]];
 }
-
 
 @end

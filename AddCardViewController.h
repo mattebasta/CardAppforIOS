@@ -10,16 +10,17 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @class AddCardViewController;
-@protocol AddCardDelegate //nome del delegate
+@protocol AddCardDelegate //delegate Name
 
 
-//conferma azione
--(void)saveCardName:(NSString *)corpName clientId:(NSString *)clientId;
+//save the name,clientID and color of the card
+-(void)saveCardName:(NSString *)corpName clientId:(NSString *)clientId cellBackground:(UIColor *)cellBackground;
 
 @end
 
 
 @interface AddCardViewController : UIViewController
+
 
 @property (nonatomic,weak) id <AddCardDelegate> delegate;
 
