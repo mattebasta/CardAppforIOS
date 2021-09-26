@@ -13,8 +13,11 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol AddCardDelegate //delegate Name
 
 
-//save the name,clientID and color of the card
--(void)saveCardName:(NSString *)corpName clientId:(NSString *)clientId cellBackground:(UIColor *)cellBackground;
+//save the name,clientID
+-(void)saveCardName:(NSString *)corpName clientId:(NSString *)clientId;
+
+//send the color of the card
+-(void)sendCardColor:(UIColor *)choosenColor;
 
 @end
 

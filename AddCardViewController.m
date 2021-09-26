@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *clientIdField;
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *cardColor;
+
 @end
 
 @implementation AddCardViewController
@@ -29,16 +31,44 @@
 
 - (IBAction)saveCardButton:(UIBarButtonItem *)sender {
 
-    /*if (_corpNameField.text && _corpNameField.text.length > 0) {
+    if ((self.corpNameField.text.length && self.clientIdField.text.length) > 0) {
+        
+        [self.delegate saveCardName:self.corpNameField.text clientId:self.clientIdField.text];
+        
+    }
+    else{
+        
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Missing Data" message:@"Make sure all field are completed" preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *actionOK = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
             NSLog(@"OK pressed");
         }];
         [alert addAction:actionOK];
         [self presentViewController:alert animated:YES completion:nil];
-    }*/
+    }
     
-        [self.delegate saveCardName:self.corpNameField.text clientId:self.clientIdField.text cellBackground:[UIColor purpleColor]];
 }
+- (IBAction)selectedCardColor:(id)sender {
+    
+    switch (self.cardColor.selectedSegmentIndex) {
+        case 0:
+            [self.delegate sendCardColor:[UIColor systemRedColor]];
+            break;
+        case 1:
+            [self.delegate sendCardColor:[UIColor systemGreenColor]];
+            break;
+        case 2:
+            [self.delegate sendCardColor:[UIColor systemPurpleColor]];
+            break;
+        case 3:
+            [self.delegate sendCardColor:[UIColor systemTealColor]];
+            break;
+        default:
+            break;
+    }
+}
+
+
+
+
 
 @end

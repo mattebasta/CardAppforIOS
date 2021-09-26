@@ -8,7 +8,6 @@
 /*
  TODO
  controllo per valori nulli delle nuove carte
- color picker per il colore della carta
  */
 
 #import "CardTableViewController.h"
@@ -49,7 +48,7 @@
     
     self.nameCards = [NSMutableArray arrayWithObjects:nil];
     self.clientId = [NSMutableArray arrayWithObjects:nil];
-    self.cellColors = [NSMutableArray arrayWithObjects:nil];
+    self.cellColors = [NSMutableArray arrayWithObjects: nil];
 }
 
 #pragma mark - Table view data source
@@ -89,13 +88,19 @@
         }
 }
 
--(void)saveCardName:(NSString *)corpName clientId:(NSString *)clientId cellBackground:(UIColor *)cellBackground{
+-(void)saveCardName:(NSString *)corpName clientId:(NSString *)clientId{
     
         [self.nameCards addObject:corpName];
         [self.clientId addObject:clientId];
-        [self.cellColors addObject:cellBackground];
         [self.tableView reloadData];
         [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)sendCardColor:(UIColor *)choosenColor{
+    
+        [self.cellColors addObject:choosenColor];
+        [self.tableView reloadData];
+    
 }
 
 -(BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -106,6 +111,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self.nameCards removeObjectAtIndex:indexPath.row];
         [self.clientId removeObjectAtIndex:indexPath.row];
+        [self.cellColors removeObjectAtIndex:indexPath.row];
         [tableView reloadData];
     }
 }
