@@ -72,42 +72,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-87-cWW">
-                                <rect key="frame" x="20" y="148" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3q3-87-cWW">
+                                <rect key="frame" x="20" y="148" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="HC3-jS-lsg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbH-wc-cD4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbH-wc-cD4">
                                 <rect key="frame" x="20" y="106" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="n9z-zf-vee"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-um-RBA">
-                                <rect key="frame" x="20" y="197" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6a-um-RBA">
+                                <rect key="frame" x="20" y="207" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cNT-O0-7ys"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="client Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3v-mU-AIs">
-                                <rect key="frame" x="20" y="239" width="332" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="client Id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o3v-mU-AIs">
+                                <rect key="frame" x="20" y="249" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Nhq-dL-fjz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose a color for your card" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-fD-eg3">
-                                <rect key="frame" x="20" y="405" width="374" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a color for your card" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hph-fD-eg3">
+                                <rect key="frame" x="84" y="380" width="248" height="80"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="gMZ-FW-GPe">
-                                <rect key="frame" x="20" y="496" width="332" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="gMZ-FW-GPe">
+                                <rect key="frame" x="87.5" y="468" width="239" height="32"/>
                                 <segments>
                                     <segment title="Red"/>
                                     <segment title="Green"/>
@@ -121,6 +127,27 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OoG-UM-YKI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OoG-UM-YKI" firstAttribute="trailing" secondItem="i6a-um-RBA" secondAttribute="trailing" constant="20" id="3ft-bZ-3p6"/>
+                            <constraint firstItem="OoG-UM-YKI" firstAttribute="trailing" secondItem="KbH-wc-cD4" secondAttribute="trailing" constant="20" id="42F-ha-T6M"/>
+                            <constraint firstItem="i6a-um-RBA" firstAttribute="leading" secondItem="OoG-UM-YKI" secondAttribute="leading" constant="20" id="5gi-eE-ZRO"/>
+                            <constraint firstItem="KbH-wc-cD4" firstAttribute="leading" secondItem="OoG-UM-YKI" secondAttribute="leading" constant="20" id="6bO-mY-AD4"/>
+                            <constraint firstItem="gMZ-FW-GPe" firstAttribute="top" secondItem="o3v-mU-AIs" secondAttribute="bottom" constant="185" id="7CE-Lf-utK"/>
+                            <constraint firstItem="gMZ-FW-GPe" firstAttribute="top" secondItem="Hph-fD-eg3" secondAttribute="bottom" constant="8" id="9hq-nZ-agx"/>
+                            <constraint firstItem="gMZ-FW-GPe" firstAttribute="top" secondItem="OoG-UM-YKI" secondAttribute="top" constant="380" id="MzX-6e-vlV"/>
+                            <constraint firstItem="o3v-mU-AIs" firstAttribute="leading" secondItem="OoG-UM-YKI" secondAttribute="leading" constant="20" id="P6z-vO-CZJ"/>
+                            <constraint firstItem="Hph-fD-eg3" firstAttribute="top" secondItem="o3v-mU-AIs" secondAttribute="bottom" constant="97" id="Stp-zK-Hdl"/>
+                            <constraint firstItem="Hph-fD-eg3" firstAttribute="top" secondItem="i6a-um-RBA" secondAttribute="bottom" constant="139" id="Wv9-G2-PTO"/>
+                            <constraint firstItem="OoG-UM-YKI" firstAttribute="trailing" secondItem="3q3-87-cWW" secondAttribute="trailing" constant="20" id="Xax-Qz-aWF"/>
+                            <constraint firstItem="OoG-UM-YKI" firstAttribute="trailing" secondItem="o3v-mU-AIs" secondAttribute="trailing" constant="20" id="b2x-pw-afv"/>
+                            <constraint firstItem="3q3-87-cWW" firstAttribute="leading" secondItem="OoG-UM-YKI" secondAttribute="leading" constant="20" id="bcr-BN-guR"/>
+                            <constraint firstItem="o3v-mU-AIs" firstAttribute="top" secondItem="i6a-um-RBA" secondAttribute="bottom" constant="8" id="eAZ-hU-mfY"/>
+                            <constraint firstItem="KbH-wc-cD4" firstAttribute="top" secondItem="OoG-UM-YKI" secondAttribute="top" constant="18" id="fwG-Py-KiA"/>
+                            <constraint firstItem="gMZ-FW-GPe" firstAttribute="centerX" secondItem="bN6-fS-Ewy" secondAttribute="centerX" id="gLt-pS-Rh2"/>
+                            <constraint firstItem="i6a-um-RBA" firstAttribute="top" secondItem="3q3-87-cWW" secondAttribute="bottom" constant="25" id="lZg-Bb-zv8"/>
+                            <constraint firstItem="Hph-fD-eg3" firstAttribute="centerX" secondItem="bN6-fS-Ewy" secondAttribute="centerX" constant="1" id="nld-bp-O9s"/>
+                            <constraint firstItem="3q3-87-cWW" firstAttribute="top" secondItem="KbH-wc-cD4" secondAttribute="bottom" constant="8" id="s6b-SF-PtI"/>
+                        </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="mge-MA-xva">

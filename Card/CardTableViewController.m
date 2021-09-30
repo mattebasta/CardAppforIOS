@@ -7,7 +7,7 @@
 
 /*
  TODO
- controllo per valori nulli delle nuove carte
+ controllo colori
  */
 
 #import "CardTableViewController.h"
