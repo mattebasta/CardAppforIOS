@@ -5,10 +5,6 @@
 //  Created by Matte on 23/09/21.
 //
 
-/*
- TODO
- controllo colori
- */
 
 #import "CardTableViewController.h"
 #import "AddCardViewController.h"
